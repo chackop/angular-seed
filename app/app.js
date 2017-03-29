@@ -3,12 +3,14 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
   'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+])
+  .controller('weatherController', ['$http', '$scope', function ($http, $scope) {
+    // london city id - 2643743
+    // api key 76ecf50a3b54ae7a236fab542e340c50
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+$http.get('http://api.openweathermap.org/data/2.5/forecast?q=London&appid=76ecf50a3b54ae7a236fab542e340c50')
+.success(function(res) {
+  $scope.tempdata = res.list[1];
+})
+  }]);
