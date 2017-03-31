@@ -6,11 +6,23 @@ angular.module('myApp', [
   'myApp.version'
 ])
   .controller('weatherController', ['$http', '$scope', function ($http, $scope) {
-    // london city id - 2643743
-    // api key 76ecf50a3b54ae7a236fab542e340c50
+    // var vm = $this; 
+    var URL = 'http://api.openweathermap.org/data/2.5/forecast?q=London&units=metric&cnt=5&appid=76ecf50a3b54ae7a236fab542e340c50';
+    // var URL = 'http://api.openweathermap.org/data/2.5/forecast/'; 
+    // var request = {
+    //   method: 'GET',
+    //   url: URL,
+    //   params: {
+    //     q: 'London', // or id 2643743
+    //     mode: 'json',
+    //     units: 'metric',
+    //     cnt: '5',
+    //     appid: '76ecf50a3b54ae7a236fab542e340c50'
+    //   }
+    // };
 
-$http.get('http://api.openweathermap.org/data/2.5/forecast?q=London&appid=76ecf50a3b54ae7a236fab542e340c50')
-.success(function(res) {
-  $scope.tempdata = res.list[1];
-})
+    $http.get(URL)
+      .success(function (response) {
+        $scope.tempdata = response.list;
+      });
   }]);
