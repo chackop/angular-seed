@@ -2,20 +2,19 @@
 
 <div ng-controller="weatherController as weatherCtrl">
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="x in tempdata">
-            <div class="day-panel">
-                <h3>Day {{ $index + 1 }}</h3>
-                <h4>Avg Temp {{ x.main.temp }}</h4>
-                <h4>Temp Max {{ x.main.temp_max }}</h4>
-                <h4>Temp Min {{ x.main.temp_min }}</h4>
-                <h4>Humidity {{ x.main.humidity }}</h4>
+        <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="wd in weatherdata">
+            <div class="weather-panel">
+                <!--<div ng-repeat="(key, value) in wd">
+                    {{ key }}, {{ value }}
+                </div>-->
+                <h3><strong>Day {{ $index + 1 }}</strong></h3>
+                <div ng-repeat="wdesc in wd.weather">
+                    <h4>Weather - {{ wdesc.main }} / {{ wdesc.description }}</h4>
+                </div>
+                <h4>Temperature - {{ wd.main.temp }}</h4>
+                <h4>Min Temp- {{ wd.main.temp_min }}, Max Temp- {{ wd.main.temp_max }}</h4>             
+                <h4>Humidity - {{ wd.main.humidity }}</h4>
             </div>
         </div>
-        <!--<div class="col-xs-6 col-md-4">
-                        weather 
-                        description {{ x.weather.description }} 
-                        main {{ x.weather.main }}
-                        icon {{ x.weather.icon }}
-                    </div>-->
     </div>
 </div>

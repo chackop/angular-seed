@@ -2,12 +2,13 @@
   padding: 40px;
 }
 
-.day-panel {
+.weather-panel {
   color: darkgray;
-  background-color: lightblue;
+  background-color: darkblue;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
+  text-align: center;
 }
 
 h3 {
