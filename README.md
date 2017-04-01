@@ -14,7 +14,9 @@ Bootsrap grid classes are also used to make the specific panels responsive
 ### Future Enhancements
 
 Some of the key enhancements for future iterations include:
-Use custom directives so that it can be applied with multiple cities
-Apply options to switch between units
-Usage of font vector icons (within the weather data)
+Use custom directives so that it can be applied with multiple cities, 
+Input to search by city, id or co-ordinates and apply validation, 
+Apply options to switch between units and show extra info, 
+Options to show generalised details per day and also options to show extra details per day,
+Usage of weather icons. 
  

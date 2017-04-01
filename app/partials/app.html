@@ -1,15 +1,13 @@
-<h1>5 day Weather forecast for london</h1>
+<h1>5 day Weather forecast for London monitored every 3 hours</h1>
 
 <div ng-controller="weatherController as weatherCtrl">
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="wd in weatherdata">
             <div class="weather-panel">
                 <!--<div ng-repeat="(key, value) in wd">
-                    {{ key }}, {{ value }}
+                    {{ $index }}, {{ key }}, {{ value }}
                 </div>-->
-                <!--<h3><strong>Day - {{ $index + 1 }}</strong></h3>-->
-                <h3><strong>Date Time- {{wd.dt_txt}}</strong></h3>
-
+                <h3><strong>Date Time- {{ wd.dt_txt }}</strong></h3>
                 <div ng-repeat="wdesc in wd.weather">
                     <h4>Weather - {{ wdesc.main }} / {{ wdesc.description }}</h4>
                 </div>
