@@ -7,12 +7,14 @@
                 <!--<div ng-repeat="(key, value) in wd">
                     {{ key }}, {{ value }}
                 </div>-->
-                <h3><strong>Day {{ $index + 1 }}</strong></h3>
+                <!--<h3><strong>Day - {{ $index + 1 }}</strong></h3>-->
+                <h3><strong>Date Time- {{wd.dt_txt}}</strong></h3>
+
                 <div ng-repeat="wdesc in wd.weather">
                     <h4>Weather - {{ wdesc.main }} / {{ wdesc.description }}</h4>
                 </div>
                 <h4>Temperature - {{ wd.main.temp }}</h4>
-                <h4>Min Temp- {{ wd.main.temp_min }}, Max Temp- {{ wd.main.temp_max }}</h4>             
+                <h4>Min Temp- {{ wd.main.temp_min }}, Max Temp- {{ wd.main.temp_max }}</h4>
                 <h4>Humidity - {{ wd.main.humidity }}</h4>
             </div>
         </div>
