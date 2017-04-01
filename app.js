@@ -7,7 +7,7 @@ angular.module('myApp', [
 ])
   .controller('weatherController', ['$http', '$scope', function ($http, $scope) {
     // var URL = 'http://api.openweathermap.org/data/2.5/forecast?q=London&units=metric&appid=76ecf50a3b54ae7a236fab542e340c50';
-    var URL = 'http://api.openweathermap.org/data/2.5/forecast?id=2643743&units=metric&appid=76ecf50a3b54ae7a236fab542e340c50';
+    var URL = 'https://api.openweathermap.org/data/2.5/forecast?id=2643743&units=metric&appid=76ecf50a3b54ae7a236fab542e340c50';
     // Structured request header
     // var URL = 'http://api.openweathermap.org/data/2.5/forecast/'; 
     // var request = {
