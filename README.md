@@ -3,6 +3,7 @@
 This project is an application to monitor the 5 day weather forecast for London. 
 It is the first iteration which is based on application skeleton from angular seed app. 
 It also is mobile responsive which is achieved using bootstrap.
+Currently this is hosted on github pages
 
 ## Functions
 
