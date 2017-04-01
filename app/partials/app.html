@@ -1,21 +1,21 @@
 <h1>5 day Weather forecast for london</h1>
 
 <div ng-controller="weatherController as weatherCtrl">
-    <div ng-repeat="x in tempdata">
-        <div class="row">
-            <div class="col-xs-12">
-                day {{ $index + 1 }} temperature 
-                temperature {{ x.main.temp }} 
-                temp max {{ x.main.temp_max }} 
-                temp min {{ x.main.temp_min
-                }} humidity {{ x.main.humidity }}
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="x in tempdata">
+            <div class="day-panel">
+                <h3>Day {{ $index + 1 }}</h3>
+                <h4>Avg Temp {{ x.main.temp }}</h4>
+                <h4>Temp Max {{ x.main.temp_max }}</h4>
+                <h4>Temp Min {{ x.main.temp_min }}</h4>
+                <h4>Humidity {{ x.main.humidity }}</h4>
             </div>
-            <!--<div class="col-xs-6">
+        </div>
+        <!--<div class="col-xs-6 col-md-4">
                         weather 
                         description {{ x.weather.description }} 
                         main {{ x.weather.main }}
                         icon {{ x.weather.icon }}
                     </div>-->
-        </div>
     </div>
 </div>

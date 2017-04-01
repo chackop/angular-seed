@@ -1,4 +1,21 @@
 .container {
   padding: 40px;
 }
+
+.day-panel {
+  color: darkgray;
+  background-color: lightblue;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: yellow;
+}
+
     		
