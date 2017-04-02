@@ -15,8 +15,8 @@ In the view level, ng-repeat is used to iterate through and display the basic da
 Further nested ng-repeat is also used to access the specific array data as well.
 Bootsrap grid classes are also used to make the specific panels responsive.
 The app is also deployed over the site https://chackop.github.io/angular-weather-app/
-Also please note that the open weather api call takes place over http (not https) as the ssl is only avaialble for the premium version.
-So please ensure to let the scripts run when the app has loaded (by clicking shield icon that comes in chrome for e.g.).
+Also please note that the open weather api call takes place over http (not https) as the ssl is only available for the premium version.
+So please ensure to let the scripts run when the app has loaded (by clicking the shield icon that comes in chrome for e.g.).
 
 ### Future Enhancements
 
